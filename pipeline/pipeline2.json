@@ -1,0 +1,40 @@
+{
+	"name": "pipeline2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://prod-68.eastus.logic.azure.com:443/workflows/100f0f5e144143d1b68223c58d356cc5/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=88sbmp-TwrT9DAuS8OLiPuWMG7tpWa_8Vey3R1YXPNs",
+					"method": "POST",
+					"body": {
+						"message": "success"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"receiver": {
+				"type": "string",
+				"defaultValue": "vvinaybhargav1997@gmail.com"
+			},
+			"message": {
+				"type": "string",
+				"defaultValue": "Success"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2023-06-21T17:54:26Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

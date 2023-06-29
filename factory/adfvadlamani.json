@@ -1,0 +1,9 @@
+{
+	"name": "adfvadlamani",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e32a8a96-cf86-4c6e-9a0b-4ba8ea1f6871",
+		"tenantId": "5989ed58-91a8-498e-bf93-c96a4b891a51"
+	}
+}
