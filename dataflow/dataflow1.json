@@ -18,7 +18,7 @@
 						"referenceName": "AzureBlobStorage1",
 						"type": "LinkedServiceReference"
 					},
-					"name": "sink1qa",
+					"name": "sink1qa1",
 					"rejectedDataLinkedService": {
 						"referenceName": "AzureBlobStorage1",
 						"type": "LinkedServiceReference"
@@ -43,7 +43,7 @@
 				"     format: 'json',",
 				"     container: 'adf',",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> sink1qa"
+				"     skipDuplicateMapOutputs: true) ~> sink1qa1"
 			]
 		}
 	}
